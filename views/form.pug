@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    form(method='POST' action='/new')
+      label(for='message') Message:
+      textarea#message(name='messageText')
+      label(for='user') User
+      input#user(type='text' name='user')
+      input(type="submit")
