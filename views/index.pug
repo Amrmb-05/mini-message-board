@@ -5,3 +5,5 @@ block content
   each message in messages
    h2= message.text
    p by  #{message.user} at #{message.added}
+  form(action="/new", method="get") 
+    input(type="submit" value="New message")
